@@ -5,10 +5,11 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-; We can draw a color sprite by setting two registers
-; on every scanline:
-; GRP0 (the bitmap) and COLUP0 (the player color).
-; There's a separate lookup table for each.
+; This asm is an excercise to understand how HMOVE sets
+; A range between -8 and 7 wrt RESP. Both Sprites are used
+; The first appears as the diagonal line, the second as a
+; straight line. Challenge to the reader: WHY ARE ONLY THE
+; POSITIVE VALUES of HMOV rendering the Sprite? 
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
